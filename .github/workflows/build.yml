@@ -248,7 +248,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+          # 设置执行策略
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          
+          # 运行安装脚本
+          .\Install-SDK.ps1
+          
+          # 验证安装
+          if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+              Write-Host "Windows SDK installed successfully"
+          } else {
+              Write-Error "Windows SDK installation failed"
+              exit 1
+          }
     - name: Run build script
       shell: cmd
       run: |
@@ -283,7 +295,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+        # 设置执行策略
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # 运行安装脚本
+        .\Install-SDK.ps1
+        
+        # 验证安装
+        if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+            Write-Host "Windows SDK installed successfully"
+        } else {
+            Write-Error "Windows SDK installation failed"
+            exit 1
+        }
     - name: Run build script
       shell: cmd
       run: |
@@ -314,7 +338,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+        # 设置执行策略
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # 运行安装脚本
+        .\Install-SDK.ps1
+        
+        # 验证安装
+        if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+            Write-Host "Windows SDK installed successfully"
+        } else {
+            Write-Error "Windows SDK installation failed"
+            exit 1
+        }
     - name: Run build script
       shell: cmd
       run: |
@@ -349,7 +385,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+        # 设置执行策略
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # 运行安装脚本
+        .\Install-SDK.ps1
+        
+        # 验证安装
+        if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+            Write-Host "Windows SDK installed successfully"
+        } else {
+            Write-Error "Windows SDK installation failed"
+            exit 1
+        }
     - name: Run build script
       shell: cmd
       run: |
@@ -380,7 +428,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+        # 设置执行策略
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # 运行安装脚本
+        .\Install-SDK.ps1
+        
+        # 验证安装
+        if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+            Write-Host "Windows SDK installed successfully"
+        } else {
+            Write-Error "Windows SDK installation failed"
+            exit 1
+        }
     - name: Run build script
       shell: cmd
       run: |
@@ -411,7 +471,19 @@ jobs:
     - name: Install Windows 10 SDK (10.0.20348.0)
       shell: pwsh
       run: |
-        choco install windows-sdk-10.0 --version=10.0.20348.0
+        # 设置执行策略
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # 运行安装脚本
+        .\Install-SDK.ps1
+        
+        # 验证安装
+        if (Test-Path "C:\Program Files (x86)\Windows Kits\10") {
+            Write-Host "Windows SDK installed successfully"
+        } else {
+            Write-Error "Windows SDK installation failed"
+            exit 1
+        }
     - name: Run build script
       shell: cmd
       run: |
