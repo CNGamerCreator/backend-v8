@@ -76,5 +76,7 @@ llvm-objcopy \
 mkdir v8_custom_libcxx
 cd v8_custom_libcxx
 llvm-ar x ../libv8_custom_libcxx.a
+mv mutex.o mutex_cxx.o
+mv string.o string_cxx.o
 cd -
 llvm-ar rcs out.gn/$ARCH.release/obj/libwee8.a v8_custom_libcxx/*.o
