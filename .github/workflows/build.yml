@@ -597,8 +597,6 @@ jobs:
         brew install python@3.9
         pip install virtualenv
     - uses: actions/checkout@v2
-    - name: Select Xcode 15.2
-      run: sudo xcode-select -switch "/Applications/Xcode_15.2.0.app"
     - name: Run build script
       run: |
         export PATH=/usr/local/opt/python@3.9/libexec/bin:$PATH
