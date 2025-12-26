@@ -590,13 +590,15 @@ jobs:
   build_ios:
     if: github.event.inputs.build_ios == 'true'
     name: iOS
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
     - name: use python3.9
       run: |
         brew install python@3.9
         pip install virtualenv
     - uses: actions/checkout@v2
+    - name: Select Xcode 15.2
+      run: sudo xcode-select -switch "/Applications/Xcode_15.2.0.app"
     - name: Run build script
       run: |
         export PATH=/usr/local/opt/python@3.9/libexec/bin:$PATH
