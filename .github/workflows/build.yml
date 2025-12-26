@@ -568,7 +568,7 @@ jobs:
   build_macos_arm64_dll:
     if: github.event.inputs.build_macos == 'true' && github.event.inputs.build_macos_silicon == 'true'
     name: macOS-DLL with apple m1
-    runs-on: macos-13
+    runs-on: macos-15
     steps:
     - name: use python3.9
       run: |
